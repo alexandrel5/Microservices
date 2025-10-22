@@ -6,7 +6,7 @@ import lombok.Data;
 public class AccountsDto {
     private Long customerId;
 
-    private String accountNumber;
+    private Long accountNumber;
 
     private String accountType;
 
