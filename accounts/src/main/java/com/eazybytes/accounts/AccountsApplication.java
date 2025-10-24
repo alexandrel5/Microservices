@@ -10,6 +10,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
+
+/*
+@ComponentScans({@ComponentScan("com.eazybytes.accounts.controller")})
+@EnableJpaRepositories("com.eazybytes.accounts.repository")
+@EntityScan("com.eazybytes.accounts.model")
+//Option to use when your package are not in the right place compared with this class needing specify
+*/
 @SpringBootApplication
 @OpenAPIDefinition(
         info = @Info(
