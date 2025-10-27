@@ -1,0 +1,13 @@
+#Command to generate package jar throughout maven
+mvn clean install
+
+#Write instructions to Docker inside a file with the name Dockerfile
+#Dockerfile
+
+#Exucute the docker command
+"docker build . -t alexandrel5/accounts:s4"
+#from the location where Dockerfile is present. This will generate the docker image based
+#on the tag name provided
+
+#Command to create a container with option -d to run it without show log in line command like below
+docker run -d -p 8080:8080 alexandrel5/accounts:s4
