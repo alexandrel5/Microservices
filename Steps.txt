@@ -1,3 +1,4 @@
+############################### Running a Spring boot as a container using Dockerfile #########################################
 #Command to generate package jar throughout maven
 mvn clean install
 
@@ -31,4 +32,25 @@ docker run -d -p 8080:8080 alexandrel5/accounts:s4
 #without the need of Dockerfile
 #Exute the docker command
 "docker run -p 8090:8090 alexandrel5/loans:s4"
+#This will start the docker container based on the docker image name and port mapping provided
+
+############################### Running a Spring boot as a container using GoogleContainerTools ####################################
+
+#Add the configuration like below
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.6</version>
+                <configuration>
+                    <to>
+                        <image>alexandrel5/${project.artifactId}:s4</image>
+                    </to>
+                </configuration>
+            </plugin>
+
+#Run maven command "mvn compile jib:dockerBuilder"
+#from the location where pom.xml is present to generate the docker image without need of Dockerfile
+
+#Exute the docker command
+"docker run -p 9000:9000 alexandrel5/cards:s4"
 #This will start the docker container based on the docker image name and port mapping provided
