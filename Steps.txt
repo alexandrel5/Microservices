@@ -11,3 +11,24 @@ mvn clean install
 
 #Command to create a container with option -d to run it without show log in line command like below
 docker run -d -p 8080:8080 alexandrel5/accounts:s4
+
+############################### Running a Spring boot as a container using Buildpacks #########################################
+
+#Add the configuration like mentioned below at the pom.xml
+         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>alexandrel5/${project.artifactId}:s4</name>
+                    </image>
+                </configuration>
+            </plugin>
+
+#Run the maven command "mvn spring-boot:build-image"
+#from the location where pom.xml is present to generate the docker image
+#without the need of Dockerfile
+#Exute the docker command
+"docker run -p 8090:8090 alexandrel5/loans:s4"
+#This will start the docker container based on the docker image name and port mapping provided
