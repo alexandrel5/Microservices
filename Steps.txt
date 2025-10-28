@@ -54,3 +54,12 @@ docker run -d -p 8080:8080 alexandrel5/accounts:s4
 #Exute the docker command
 "docker run -p 9000:9000 alexandrel5/cards:s4"
 #This will start the docker container based on the docker image name and port mapping provided
+
+############################### Command to push image from local to docker hub ####################################
+#where need change this user alexandrel5 to your user
+docker image push docker.io/alexandrel5/accounts:s4
+############################### Command docker ####################################
+docker compose up -d #used to create and start all containers within compose file
+docker compose down #used to stop and remove all containers
+docker compose stop # used to only stop containers
+docker compose start# used to only start containers
