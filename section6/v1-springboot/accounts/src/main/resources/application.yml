@@ -15,15 +15,21 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
-
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
   message: "Welcome to EazyBank accounts related local APIs"
   contactDetails:
-    name: "Alexandre Candido - Dev"
-    email: "alexandrecandidol5@gmail.com"
+    name: "John Doe - Developer"
+    email: "john@gmail.com"
   onCallSupport:
-    - (31)3333-3333
-    - (31)3333-3335
+    - (31)5555-3333
+    - (31)3335-3635
