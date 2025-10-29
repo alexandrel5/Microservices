@@ -18,3 +18,12 @@ spring:
 
 build:
   version: "1.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contactDetails:
+    name: "Alexandre Candido - Dev"
+    email: "alexandrecandidol5@gmail.com"
+  onCallSupport:
+    - (31)3333-3333
+    - (31)3333-3335
