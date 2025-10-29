@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to EazyBank loans related prod APIs"
+  contactDetails:
+    name: "Raine Aishwarva - Product Owner"
+    email: "raine@gmail.com"
+  onCallSupport:
+    - (31)3455-3434
+    - (31)6534-4343

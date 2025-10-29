@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to EazyBank loans related prod APIs"
+  contactDetails:
+    name: "Pelias Aishwarva - Product Owner"
+    email: "pelias@gmail.com"
+  onCallSupport:
+    - (31)3322-3434
+    - (31)3222-4343
