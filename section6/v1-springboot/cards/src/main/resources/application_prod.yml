@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to EazyBank cards related prod APIs"
+  contactDetails:
+    name: "sandra Aishwarva - Product Owner"
+    email: "sandra@gmail.com"
+  onCallSupport:
+    - (31)5656-3434
+    - (31)8565-4343

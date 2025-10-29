@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to EazyBank cards related QA APIs"
+  contactDetails:
+    name: "Rubia - QA Lead"
+    email: "rubia@gmail.com"
+  onCallSupport:
+    - (31)1222-3434
+    - (31)2323-4343
