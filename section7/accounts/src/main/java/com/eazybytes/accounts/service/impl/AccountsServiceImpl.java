@@ -53,7 +53,7 @@ public class AccountsServiceImpl implements IAccountsService {
                 ()-> new ResourceNotFoundException("Account", "customerId", customer.getCustomerId().toString())
         );
         CustomerDto customerDto = CustomerMapper.mapToCustomerDto(customer, new CustomerDto());
-        customerDto.setAcountsDto(AccountsMapper.mapToAccountsDto(accounts, new AccountsDto()));
+        customerDto.setAccountsDto(AccountsMapper.mapToAccountsDto(accounts, new AccountsDto()));
         return customerDto;
     }
 
@@ -64,7 +64,7 @@ public class AccountsServiceImpl implements IAccountsService {
     @Override
     public boolean updateAccount(CustomerDto customerDto) {
         boolean isUpdated = false;
-        AccountsDto accountsDto = customerDto.getAcountsDto();
+        AccountsDto accountsDto = customerDto.getAccountsDto();
         if(accountsDto != null) {
             Accounts accounts = accountsRepository.findById(accountsDto.getAccountNumber()).orElseThrow(
                     ()-> new ResourceNotFoundException("Account", "AccountNumber", accountsDto.getAccountNumber().toString())
