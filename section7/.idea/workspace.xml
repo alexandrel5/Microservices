@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaedc1fd-537e-44a3-8d5e-2ec5193d9aaa" name="Changes" comment="Running microservices, Mysql DB containers and using docker compose file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aaedc1fd-537e-44a3-8d5e-2ec5193d9aaa" name="Changes" comment="Running microservices, Mysql DB containers and using docker compose file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +135,7 @@
       <workItem from="1761940477959" duration="4344000" />
       <workItem from="1762169366093" duration="669000" />
       <workItem from="1762197041929" duration="605000" />
+      <workItem from="1762370344609" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Generate image with jib">
       <option name="closed" value="true" />
