@@ -48,6 +48,9 @@ docker run -d -p 8080:8080 alexandrel5/accounts:s4
                 </configuration>
             </plugin>
 
+#command to clean and compile if you have any problem
+#mvn clean compile jib:dockerBuild
+
 #Run maven command "mvn compile jib:dockerBuilder"
 #from the location where pom.xml is present to generate the docker image without need of Dockerfile
 
