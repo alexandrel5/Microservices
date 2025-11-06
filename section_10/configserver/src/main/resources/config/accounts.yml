@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contactDetails:
+    name: "York Doe - Developer"
+    email: "york@gmail.com"
+  onCallSupport:
+    - (31)5555-3333
+    - (31)3335-3635
