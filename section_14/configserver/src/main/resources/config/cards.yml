@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to EazyBank cards related local APIs"
+  contactDetails:
+    name: "Claudio Doe - Developer"
+    email: "Claudio@gmail.com"
+  onCallSupport:
+    - (31)5555-3333
+    - (31)3335-3635
