@@ -1,0 +1,11 @@
+Commands helm
+
+helm ls
+
+#To build dependency
+helm dependency build
+
+#helm install nome folder
+helm install grafana grafana
+
+kubectl get services
