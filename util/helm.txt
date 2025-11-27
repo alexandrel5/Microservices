@@ -8,4 +8,11 @@ helm dependency build
 #helm install nome folder
 helm install grafana grafana
 
+#
+helm uninstall eazybank
+
 kubectl get services
+
+helm history eazybank
+
+helm rollback eazybank 1
