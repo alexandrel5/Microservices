@@ -9,6 +9,10 @@ helm dependency build
 helm install grafana grafana
 
 #
+
+helm install eazybank prod-env
+helm uninstall eazybank prod-env
+
 helm uninstall eazybank
 
 kubectl get services

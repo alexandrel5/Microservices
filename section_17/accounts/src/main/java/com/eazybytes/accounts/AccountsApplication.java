@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.info.License;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
@@ -21,6 +22,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 //Option to use when your package are not in the right place compared with this class needing specify
 */
 @SpringBootApplication
+@EnableDiscoveryClient
 @EnableFeignClients
 @OpenAPIDefinition(
         info = @Info(
